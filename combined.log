@@ -6,3 +6,21 @@
 {"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2024-03-08T23:00:30.300Z"}
 {"level":"info","message":"Listening on port 3001...","timestamp":"2024-03-10T01:43:55.433Z"}
 {"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2024-03-10T01:43:55.451Z"}
+{"level":"info","message":"Listening on port 3001...","timestamp":"2024-03-10T07:36:40.902Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2024-03-10T07:36:40.932Z"}
+{"level":"info","message":"Listening on port 3001...","timestamp":"2024-03-11T19:00:16.827Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2024-03-11T19:00:16.865Z"}
+{"level":"info","message":"Listening on port 3001...","timestamp":"2024-03-11T19:02:56.207Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2024-03-11T19:02:56.229Z"}
+{"level":"info","message":"Listening on port 3001...","timestamp":"2024-03-11T19:05:46.264Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2024-03-11T19:05:46.287Z"}
+{"level":"info","message":"Listening on port 3001...","timestamp":"2024-03-11T19:06:07.675Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2024-03-11T19:06:07.701Z"}
+{"level":"info","message":"Listening on port 3001...","timestamp":"2024-03-11T19:08:14.134Z"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly...","timestamp":"2024-03-11T19:08:14.152Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"Customer\"","metadata":{"error":{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"Customer\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"undefined\"","value":"undefined","valueType":"string"}},"timestamp":"2024-03-12T04:22:06.889Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"Customer\"","metadata":{"error":{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"Customer\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"undefined\"","value":"undefined","valueType":"string"}},"timestamp":"2024-03-12T04:23:01.942Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"Customer\"","metadata":{"error":{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"Customer\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"undefined\"","value":"undefined","valueType":"string"}},"timestamp":"2024-03-12T04:23:02.941Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"Customer\"","metadata":{"error":{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"Customer\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"undefined\"","value":"undefined","valueType":"string"}},"timestamp":"2024-03-12T04:23:12.615Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"Customer\"","metadata":{"error":{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"Customer\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"undefined\"","value":"undefined","valueType":"string"}},"timestamp":"2024-03-12T04:23:34.852Z"}
+{"level":"error","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"Customer\"","metadata":{"error":{"kind":"ObjectId","message":"Cast to ObjectId failed for value \"undefined\" (type string) at path \"_id\" for model \"Customer\"","name":"CastError","path":"_id","reason":{},"stringValue":"\"undefined\"","value":"undefined","valueType":"string"}},"timestamp":"2024-03-12T04:25:32.083Z"}
