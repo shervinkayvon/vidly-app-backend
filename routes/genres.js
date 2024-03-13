@@ -12,27 +12,45 @@ router.get('/', async (req, res, next) => {
 });
 
 router.post('/', auth, async (req, res) => {
-  const { error } = validate(req.body); 
+  const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
-  const genre = new Genre({ name: req.body.name });
+  const capitalizedName = req.body.name.toLowerCase().trim().replace(/^\w/, (c) => c.toUpperCase());
+
+  const existingGenre = await Genre.findOne({ name: capitalizedName });
+  if (existingGenre) {
+    return res.status(400).send('Genre already exists.');
+  }
+
+  const genre = new Genre({ name: capitalizedName });
   await genre.save();
-  
+
   res.send(genre);
 });
 
+
+
 router.put('/:id', async (req, res) => {
-  const { error } = validate(req.body); 
+  const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
-  const genre = await Genre.findByIdAndUpdate(req.params.id, { name: req.body.name }, {
+  const capitalizedName = req.body.name.toLowerCase().trim().replace(/^\w/, (c) => c.toUpperCase());
+
+  const existingGenre = await Genre.findOne({ name: capitalizedName });
+  if (existingGenre) {
+    return res.status(400).send('Genre already exists.');
+  }
+
+  const genre = await Genre.findByIdAndUpdate(req.params.id, { name: capitalizedName }, {
     new: true
   });
 
   if (!genre) return res.status(404).send('The genre with the given ID was not found.');
-  
+
   res.send(genre);
 });
+
+
 
 router.delete('/:id', [auth, admin], async (req, res) => {
   const genre = await Genre.findByIdAndRemove(req.params.id);

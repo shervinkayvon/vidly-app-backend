@@ -13,6 +13,11 @@ router.post('/', auth, async (req, res) => {
   const { error } = validate(req.body); 
   if (error) return res.status(400).send(error.details[0].message);
 
+  const existingPhone = await Customer.findOne({ phone: req.body.phone });
+  if (existingPhone) {
+    return res.status(400).send('Phone number already exists.');
+  }
+
   let customer = new Customer({ 
     name: req.body.name,
     isGold: req.body.isGold,
@@ -30,6 +35,12 @@ router.put('/:id', auth, async (req, res) => {
   const { error } = validate(req.body); 
   if (error) return res.status(400).send(error.details[0].message);
 
+  
+  const existingPhone = await Customer.findOne({ phone: req.body.phone });
+  if (existingPhone) {
+    return res.status(400).send('Phone number already exists.');
+  }
+  
   const customer = await Customer.findByIdAndUpdate(req.params.id,
     { 
       name: req.body.name,
